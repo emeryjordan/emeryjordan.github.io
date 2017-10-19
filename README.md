@@ -4,6 +4,32 @@ You can use the [editor on GitHub](https://github.com/emeryjordan/emeryjordan.gi
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+<script>
+  window.klarnaAsyncCallback = function () {
+
+
+  Klarna.Credit.init({
+    client_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIifQ.dtxWM6MIcgoeMgH87tGvsNDY6cH'
+  })
+  <div id="klarna_container">
+  Klarna.Credit.load({
+    container: "#klarna_container"  
+}, function(res) {
+  console.debug(res);
+})
+  
+  {
+   show_form: true
+}
+
+  </div>
+
+
+
+  };
+</script>
+<script src="https://x.klarnacdn.net/kp/lib/v1/api.js" async></script>
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
